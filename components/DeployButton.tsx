@@ -1,23 +1,17 @@
+import Link from "next/link";
+
 export default function DeployButton() {
   return (
-    <a
-      className="py-2 px-3 flex rounded-md no-underline hover:bg-btn-background-hover border"
-      href="https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fwith-supabase&project-name=nextjs-with-supabase&repository-name=nextjs-with-supabase&demo-title=nextjs-with-supabase&demo-description=This%20starter%20configures%20Supabase%20Auth%20to%20use%20cookies%2C%20making%20the%20user's%20session%20available%20throughout%20the%20entire%20Next.js%20app%20-%20Client%20Components%2C%20Server%20Components%2C%20Route%20Handlers%2C%20Server%20Actions%20and%20Middleware.&demo-url=https%3A%2F%2Fdemo-nextjs-with-supabase.vercel.app%2F&external-id=https%3A%2F%2Fgithub.com%2Fvercel%2Fnext.js%2Ftree%2Fcanary%2Fexamples%2Fwith-supabase&demo-image=https%3A%2F%2Fdemo-nextjs-with-supabase.vercel.app%2Fopengraph-image.png&integration-ids=oac_VqOgBHqhEoFTPzGkPd7L0iH6"
+    <Link
+      className="py-2 px-5 flex rounded-md no-underline border border-primary text-primary"
+      href="adyfi.in/blogs"
       target="_blank"
       rel="noreferrer"
     >
-      <svg
-        aria-label="Vercel logomark"
-        role="img"
-        viewBox="0 0 74 64"
-        className="h-4 w-4 mr-2"
-      >
-        <path
-          d="M37.5896 0.25L74.5396 64.25H0.639648L37.5896 0.25Z"
-          fill="currentColor"
-        ></path>
-      </svg>
-      Deploy to Vercel
-    </a>
+      <svg width="20px" height="20px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" className="text-primary" fill="none"><path fill="#007AFF" fill-rule="evenodd" d="M8 3.517a1 1 0 011.62-.784l5.348 4.233a1 1 0 010 1.568l-5.347 4.233A1 1 0 018 11.983v-1.545c-.76-.043-1.484.003-2.254.218-.994.279-2.118.857-3.506 1.99a.993.993 0 01-1.129.096.962.962 0 01-.445-1.099c.415-1.5 1.425-3.141 2.808-4.412C4.69 6.114 6.244 5.241 8 5.042V3.517zm1.5 1.034v1.2a.75.75 0 01-.75.75c-1.586 0-3.066.738-4.261 1.835a8.996 8.996 0 00-1.635 2.014c.878-.552 1.695-.916 2.488-1.138 1.247-.35 2.377-.33 3.49-.207a.75.75 0 01.668.745v1.2l4.042-3.2L9.5 4.55z" clip-rule="evenodd"/></svg>
+      <span className="ml-3">
+        Adyfi Blog
+      </span>
+    </Link>
   );
 }
